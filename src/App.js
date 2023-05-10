@@ -41,7 +41,12 @@ const App = () => {
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
       
-      <footer><h6><center>Made with React.js by K.K.Namish.</center></h6></footer>
+      <footer>
+        <center>
+          <p className='quote'>"Who is rich? He that is content. Who is that? Nobody."</p>
+          <h6>Made with React.js by K.K.Namish.</h6>
+        </center>
+      </footer>
     </div>
   );
 }
