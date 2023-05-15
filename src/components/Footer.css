@@ -1,0 +1,9 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.quote{
+    font-style: italic;
+    opacity: 0.5;
+  }
