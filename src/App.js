@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import Expenses from './components/Expenses/Expenses';
 import NewExpense from './components/NewExpense/NewExpense';
+import Footer from './components/Footer';
 
 const DUMMY_EXPENSES = [
   {
@@ -35,19 +36,13 @@ const App = () => {
   console.log(expenses);
 
   return (
-    <div>
+    <>
       <header><h2><center>Expense Tracker.</center></h2></header>
 
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
-      
-      <footer>
-        <center>
-          <p className='quote'>"Who is rich? He that is content. Who is that? Nobody."</p>
-          <h6>Made with React.js by K.K.Namish.</h6>
-        </center>
-      </footer>
-    </div>
+      <Footer />
+    </>
   );
 }
 
